@@ -58,7 +58,7 @@ def doGridSearch(model, hyperparameters, XTrain, yTrain):
     crossValidation = KFold(n_splits = k, random_state = randomSeed, shuffle = True)
 
     # Do grid search optimization
-    grid = GridSearchCV(model, param_grid = hyperparameters, cv = crossValidation, scoring = "accuracy")
+    grid = GridSearchCV(model, param_grid = hyperparameters, cv = crossValidation, scoring = "accuracy", n_jobs = -1)
     grid.fit(XTrain, yTrain)
 
     return grid
