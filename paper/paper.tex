@@ -94,20 +94,21 @@ Removed features are as follows:
   \item \textbf{Rel Start}: This feature indicates when the TCP stream began relative to the start of the Wireshark network capture session. This is Wireshark specific and not pertinent to the TCP stream itself.
 \end{itemize}
 
+Retained features from the data set demonstrate either potential for aiding a model in identifying what a particular website is or are neutral in their benefit and do not actively harm or mislead the model in any way.
 Retained features from the raw data set are as follows:
 
 \begin{itemize}
-  \item \textbf{Packets}: This feature tracks the total packets transferred. Note that since this is a TCP stream, this feature instead referes to a TCP segment. 
+  \item \textbf{Packets}: This feature tracks the total packets transferred. Note that since this is a TCP stream, this feature instead referes to a TCP segment. Different website functionalities may result in different tendencies in frequency and amount of segments transferred during a TCP stream.
   
-  \item \textbf{Bytes}:
+  \item \textbf{Bytes}: This feature tracks the total amount of data in bytes that have been transferred during the entire TCP stream. Different website functionalities may result in smaller or larger sized data payloads being sent across the TCP stream.
   
-  \item \textbf{Packets A $\rightarrow$ B, Bytes A $\rightarrow$ B}:
+  \item \textbf{Packets A $\rightarrow$ B, Bytes A $\rightarrow$ B}: These features track the packet count and total amount of data in bytes being sent from host A (the user) to host B (the site host). How intensive interactions between the user and the website are may influence these features.
   
-  \item \textbf{Packets B $\rightarrow$ A, Bytes B $\rightarrow$ A}:
+  \item \textbf{Packets B $\rightarrow$ A, Bytes B $\rightarrow$ A}: These features track the packet count and total amount of data in bytes being sent from host B (the site host) to host A (the user). How intensive interactions between the website and the user are may influence these features.
   
-  \item \textbf{Duration}:
+  \item \textbf{Duration}: The entire time duration of the TCP stream recorded in seconds. Different durations may help indicate the purpose and level of engagement for a website.
   
-  \item \textbf{Bits/s A $\rightarrow$ B, Bits/s B $\rightarrow$ A}:
+  \item \textbf{Bits/s A $\rightarrow$ B, Bits/s B $\rightarrow$ A}: These features track the bitrate of the TCP stream. These features may not necessarily help the model as bitrate is subject to a number of factors that cannot be consistently attributed to a website alone, but the feature itself is not inherently detrimental so it has been left in the data set.
 \end{itemize}
 
 \subsection{Data Specifications}
