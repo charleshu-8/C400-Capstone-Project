@@ -15,45 +15,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Warning--empty organization in wireshark
 Warning--empty address in introInfo
-You've used 2 entries,
+You've used 3 entries,
             5981 wiz_defined-function locations,
-            1482 strings with 18074 characters,
-and the built_in function-call counts, 1592 in all, are:
-= -- 151
-> -- 48
+            1489 strings with 18443 characters,
+and the built_in function-call counts, 3500 in all, are:
+= -- 399
+> -- 183
 < -- 0
-+ -- 14
-- -- 16
-* -- 109
-:= -- 180
-add.period$ -- 10
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 139
-empty$ -- 98
-format.name$ -- 20
-if$ -- 323
++ -- 63
+- -- 64
+* -- 297
+:= -- 405
+add.period$ -- 15
+call.type$ -- 3
+change.case$ -- 32
+chr.to.int$ -- 3
+cite$ -- 5
+duplicate$ -- 247
+empty$ -- 174
+format.name$ -- 72
+if$ -- 773
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 59
-num.names$ -- 14
-pop$ -- 53
+missing$ -- 6
+newline$ -- 67
+num.names$ -- 21
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 56
 quote$ -- 0
-skip$ -- 59
+skip$ -- 97
 stack$ -- 0
-substring$ -- 98
-swap$ -- 12
+substring$ -- 210
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 45
+type$ -- 61
 warning$ -- 2
-while$ -- 10
+while$ -- 16
 width$ -- 0
-write$ -- 78
+write$ -- 97
 (There were 2 warnings)

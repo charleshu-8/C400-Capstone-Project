@@ -113,8 +113,10 @@ Retained features from the raw data set are as follows:
 
 \subsection{Data Set}
 
-Artificial user activity was performed and monitored across 5 websites: google.com, github.com, reuters.com, wikipedia.com, and youtube.com.
+Artificial user activity was performed and monitored across 5 websites: github.com, google.com, reuters.com, wikipedia.com, and youtube.com.
+These websites were specifically chosen due to their distinct functionalities (e.g., youtube.com provides video streaming services, whereas reuters.com provides news content), which may lead to distinctive web traffic behaviors that can help in providing a direction for the trained models in the classification task.
 Table ~\ref{tab:dataSize} describes the size of each class in the final data set.
+TCP stream counts per website were kept roughly the same in order to prevent data set imbalance which can lead to models over prioritizing training on the larger classes.
 
 \begin{table}
   \caption{TCP stream count per website in the final cumulative data set}
@@ -123,27 +125,97 @@ Table ~\ref{tab:dataSize} describes the size of each class in the final data set
     \toprule
     Website & TCP Stream Count \\
     \midrule
-    google & 20 \\
-    github & 20 \\
-    reuters & 20 \\
-    wikipedia & 20 \\
-    youtube & 20 \\
+    github & 100 \\
+    google & 102 \\
+    reuters & 102 \\
+    wikipedia & 100 \\
+    youtube & 102 \\
     \midrule
-    Total & 100 \\
+    Total & 506 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
 \subsubsection{Data Analysis}
 
+Preliminary data analysis was performed on the final data set to observe general trends and behavior.
+Note that due to the small sample size of the data set, potential idiosyncrasies or noise may be exacerbated in the analysis methods.
+As such, the results of these methods are only to be taken as basic guidance for handling and interpreting the data and should always be trumped by domain knowledge.
+Interpretations for each analysis method will not be provided as to ensure that these methods do not influence the interpretation of the final models; however, a basic description of how they operate will be provided.
+The developed models do not take these analysis results into account.
+
+\begin{itemize}
+  \item \textbf{Principal component analysis (PCA)}: A PCA was performed on the data set to observe the variability in the features (see Fig. ~\ref{fig:pca}).
+  PCA is used to reduce dimensionality in a data set which can help break apart correlated data, reduce complexity, and potentially remove noise.
+  A key aspect of PCA is that while dimensionality is reduced, the variability in the feature space is maintained as much as possible.
+  
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{img/pca.png}
+    \caption{PCA performed on the final data set.}
+    \label{fig:pca}
+  \end{figure}
+
+  \item \textbf{t-distributed stochastic neighbor embedding (t-SNE)}: Like PCA, t-SNE performs dimensionality reduction but emphasizes the retention of distance-based relationships between points.
+  As a result, t-SNE can sometimes help provide a low dimensional view of high dimensional relationships and groupings among points; however, distortions are likely to occur due to the inability of low dimensions to fully express the complexities of higher dimensional relationships (in a manner similar to Mercator projection maps of Earth distorting the true size of various landmasses).
+  Fig. ~\ref{fig:tsne} shows a t-SNE projection performed on the final data set.
+
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{img/tsne.png}
+    \caption{t-SNE performed on the final data set.}
+    \label{fig:tsne}
+  \end{figure}
+
+  \item \textbf{L1 regularization}: Fig. ~\ref{fig:l1} shows L1 regularization applied to the features of the final data set.
+  L1 regularization is commonly used to derive how important certain features are to the development of the final best fit model for prediction.
+  The regularization is highly dependent on the specificities of the ingested data set; thus, features denoted as important should not be blindly trusted as error or noise may distort the true importance of features in the overall population.
+  
+  \begin{figure*}[t]
+    \centering
+    \includegraphics[width=\linewidth]{img/l1.png}
+    \caption{L1 regularization performed on the final data set. The following describes the evolution of feature importance as the regularization penalty increases.}
+    \label{fig:l1}
+  \end{figure*}
+\end{itemize}
+
 \subsection{Model Development}
+
+The models used for the web traffic classification task will be developed using a mix of simple models and ensemble models.
+Simple models encompass basic learners (e.g., decision trees and k-nearest neighbors classifiers) which perform the classification task based on their specified learning algorithm.
+Ensemble models are aggregate designs which use simple models as basic components.
+They learn by varying either how its constituent component models learn and or how the results of the component models are aggregated.
+A key principle to how ensemble models work is ensemble theory, which posits that a diversity of learners will result in a stronger overall learning model.
+This is a result of having each constituent learner cover for its own inherent bias (i.e, weaknesses in learning certain aspects of the data set) by leveraging the strength of other constituent learners to cover for it (i.e., leverage learners which have already learned that part of the data set).
+
+Complex machine learning models (e.g., neural networks) will be avoided in this project due to concerns over complexity modelling capabilities.
+In particular, strong complex machine learning models are more expressive in function modelling and thus are able to better capture the target function of a given data set (i.e., they are much better at learning how to replicate the data set).
+This is undesirable due to our small sample size in our final data set, which means that ideosyncratic or noisy data points have less "good" (i.e., representative of the overall population) data to buffer and suppress their influence on the final model.
+As a result, complex models trained on this data set have the potential to learn more bad data and generate final models which have internalized such errors and thus are no longer generalizable to our overall population.
+This is mitigated by using simpler models which have less modelling capacity (i.e., more bias) and thus are less capable of modelling errors in the first place.
+
+Developed models will be compared against a logistic regression model, which will serve as the baseline.
+Models will be trained using a 8:2 training-test split ratio.
+Cross-validation and hyperparameter tuning will be used when available to optimize the training of models.
 
 \subsection{Model Specifications}
 
+6 simple model designs and 5 ensemble model designs will be employed.
+Ensemble models will be comprised of simple models that are either the best performing or most applicable.
+The developed models will utilize the model implementations provided by the scikit-learn package \cite{scikit-learn}.
+The details of these model designs are summarized in the following subsections.
+
 \subsubsection{Simple Models}
+
+\begin{itemize}
+  \item \textbf{}
+\end{itemize}
 
 \subsubsection{Ensemble Models}
 
+\begin{itemize}
+  \item \textbf{}
+\end{itemize}
 
 \section{Evaluation}
 
