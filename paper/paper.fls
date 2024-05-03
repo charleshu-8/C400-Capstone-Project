@@ -363,6 +363,8 @@ INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsyc
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumTI-tlf-t1.tfm
 INPUT .\paper.bbl
 INPUT .\paper.bbl
 INPUT paper.bbl
@@ -389,6 +391,8 @@ INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\Lin
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinBiolinumTI-tlf-t1.vf
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumTI-tlf-t1--base.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-t1.vf
@@ -399,6 +403,8 @@ INPUT .\paper.out
 INPUT .\paper.out
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinBiolinumTB.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinBiolinumTB.pfb
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinBiolinumTI.pfb
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinBiolinumTI.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb

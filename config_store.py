@@ -6,7 +6,7 @@
 files = ["github.csv", "google.csv", "reuters.csv", "wikipedia.csv", "youtube.csv"]
 
 # List of features we want to extract per file
-features = ["Packets", "Bytes", "Total Packets", "Percent Filtered", "Packets A → B", "Bytes A → B", "Packets B → A", "Bytes B → A", "Duration", "Bits/s A → B", "Bits/s B → A"]
+features = ["Packets", "Bytes", "Packets A → B", "Bytes A → B", "Packets B → A", "Bytes B → A", "Duration", "Bits/s A → B", "Bits/s B → A"]
 
 # Mapping of string values to integers to simplify output prediction for predictive models
 siteMappings = {
@@ -41,7 +41,7 @@ infoMappings = {
 }
 
 # Directory for data set used for all models
-targetDataSet = "sanitized_data/sanitized_data_2024-04-26_19-31-34-267517_mapped.csv"
+targetDataSet = "sanitized_data/sanitized_data_2024-05-02_22-42-56-831810_mapped.csv"
 
 # Randomizer seed
 randomSeed = 201

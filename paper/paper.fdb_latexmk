@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex paper"] 1714602962 "paper.aux" "paper.bbl" "paper" 1714602964 0
+["bibtex paper"] 1714662090 "paper.aux" "paper.bbl" "paper" 1714662092 0
   "./ACM-Reference-Format.bst" 1709817750 90332 18dc4e5c9b5c2ddd337e9f97727d04f1 ""
   "./refs.bib" 1709817750 282 e2603ca52f78fb3afb4bac10a42e7b82 ""
-  "paper.aux" 1714602963 1595 ac872c9e3f960f8b45897800ec04b3f2 "pdflatex"
+  "paper.aux" 1714662091 3666 da9e4612eb7d88bb79cf5dd00ab7ce5b "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1714602962 "c:/Users/okisn/OneDrive/Documents/Git/C400-Capstone-Project/paper/paper.tex" "paper.pdf" "paper" 1714602964 0
+["pdflatex"] 1714662091 "c:/Users/okisn/OneDrive/Documents/Git/C400-Capstone-Project/paper/paper.tex" "paper.pdf" "paper" 1714662092 0
   "C:/Users/okisn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1714601765 187664 65fa417f6850b604c49bfafe76826e39 ""
   "C:/Users/okisn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695394941 24120579 8bc22ca5c10060f5a4cdfe7ec27bda06 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1497089888 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
@@ -24,6 +24,8 @@
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm" 1497089891 19548 768852037f39958c435d71846b8877ea ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm" 1497089890 1768 23aace73e6def3193d6e0453af90487b ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm" 1497089890 19416 aedd2db224ad278ddf2c411f52d86014 ""
+  "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumTI-tlf-t1--base.tfm" 1497089891 1988 34f48347175f643e8b2134cd8f7a90a3 ""
+  "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumTI-tlf-t1.tfm" 1497089889 20012 beadc3a52552515981c78cd731a40afe ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm" 1497089891 5612 25e472589a362fc06ccb0764083ac550 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm" 1497089891 1740 49980bd9bb6f39f4b265a47e81fabeb3 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm" 1497089890 19504 381664c672fbaa02cfd12dce6d2c400c ""
@@ -43,10 +45,12 @@
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/nxlmi7.tfm" 1712824651 3320 6cf9c990505795806c1f3ac537f356c3 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/nxlmia.tfm" 1712824651 2616 0bf54bdee01e38e3ed8342d25e5584f6 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb" 1497089889 687959 d08b15f5c3ccd205dc84645998fa63bb ""
+  "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTI.pfb" 1497089888 879384 b65e1250540932c65529e258c09cae73 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb" 1497089889 614791 d8dc0bdea92a3db7682402cda70ec199 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb" 1497089889 538965 c5f7f11a7c6a7978c8500457bfcd2138 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb" 1497089889 490980 a252c644e887b4e2fc664c31f1402303 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf" 1497089888 1728 4ae633ddccb76ba8d0a0906a5e2e8fdf ""
+  "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinBiolinumTI-tlf-t1.vf" 1497089888 1728 0f47a4d345513e0ad2e29d47540d4f2a ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf" 1497089888 1728 58c30b3c2a148b5042bfabf244389b2f ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf" 1497089888 1768 5d66dfd9709f1f38b8fb3cb38db46402 ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf" 1497089888 1768 b3bfd8ed1fe2dce5fd19610abe4c3dbe ""
@@ -167,11 +171,11 @@
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/okisn/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "acmart.cls" 1709817750 116410 bb3e28c4a017f796d47769aed7d83ca1 ""
-  "c:/Users/okisn/OneDrive/Documents/Git/C400-Capstone-Project/paper/paper.tex" 1709817750 1898 4f88b103a6c73496d6eaad096bcc5347 ""
-  "paper.aux" 1714602963 1595 ac872c9e3f960f8b45897800ec04b3f2 "pdflatex"
-  "paper.bbl" 1714602962 2262 b6957e555a52fc76d4b78800473b750c "bibtex paper"
-  "paper.out" 1714602963 828 f4b14eaaf8de56d2df1e075065ec475b "pdflatex"
-  "paper.tex" 1709817750 1898 4f88b103a6c73496d6eaad096bcc5347 ""
+  "c:/Users/okisn/OneDrive/Documents/Git/C400-Capstone-Project/paper/paper.tex" 1714662088 2461 64875d72bf5daa0683ce367f9e38e9d8 ""
+  "paper.aux" 1714662091 3666 da9e4612eb7d88bb79cf5dd00ab7ce5b "pdflatex"
+  "paper.bbl" 1714662090 2262 b6957e555a52fc76d4b78800473b750c "bibtex paper"
+  "paper.out" 1714662091 1976 f6f6e711a09ac7240ebdfbb07826fb3a "pdflatex"
+  "paper.tex" 1714662088 2461 64875d72bf5daa0683ce367f9e38e9d8 ""
   (generated)
   "paper.aux"
   "paper.log"
