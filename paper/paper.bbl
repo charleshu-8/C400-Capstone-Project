@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,14 +37,25 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[Bock et~al\mbox{.}(2019)]%
-        {geneva}
-\bibfield{author}{\bibinfo{person}{Kevin Bock}, \bibinfo{person}{George
-  Hughey}, \bibinfo{person}{Xiao Qiang}, {and} \bibinfo{person}{Dave Levin}.}
-  \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{{Geneva: Evolving Censorship Evasion Strategies}}.
-  In \bibinfo{booktitle}{\emph{ACM Conference on Computer and Communications
-  Security (CCS)}}.
+\bibitem[Foundation(2024)]%
+        {wireshark}
+\bibfield{author}{\bibinfo{person}{Wireshark Foundation}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Wireshark}}.
+\newblock
+\urldef\tempurl%
+\url{https://www.wireshark.org/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Manning et~al\mbox{.}(2008)]%
+        {introInfo}
+\bibfield{author}{\bibinfo{person}{Christopher~D. Manning},
+  \bibinfo{person}{Prabhakar Raghavan}, {and} \bibinfo{person}{Hinrich
+  Schütze}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{"Introduction to Information Retrieval"}}.
+\newblock \bibinfo{publisher}{Cambridge University Press}.
 \newblock
 
 

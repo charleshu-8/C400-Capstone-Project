@@ -13,48 +13,47 @@ Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Warning--empty publisher in geneva
-Warning--empty address in geneva
-Warning--page numbers missing in both pages and numpages fields in geneva
-You've used 1 entry,
+Warning--empty organization in wireshark
+Warning--empty address in introInfo
+You've used 2 entries,
             5981 wiz_defined-function locations,
-            1477 strings with 18032 characters,
-and the built_in function-call counts, 1133 in all, are:
-= -- 93
-> -- 39
+            1482 strings with 18074 characters,
+and the built_in function-call counts, 1592 in all, are:
+= -- 151
+> -- 48
 < -- 0
-+ -- 13
-- -- 12
-* -- 79
-:= -- 113
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 8
-chr.to.int$ -- 1
++ -- 14
+- -- 16
+* -- 109
+:= -- 180
+add.period$ -- 10
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 2
 cite$ -- 4
-duplicate$ -- 106
-empty$ -- 75
-format.name$ -- 16
-if$ -- 244
+duplicate$ -- 139
+empty$ -- 98
+format.name$ -- 20
+if$ -- 323
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 5
-newline$ -- 47
-num.names$ -- 7
-pop$ -- 59
+missing$ -- 2
+newline$ -- 59
+num.names$ -- 14
+pop$ -- 53
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 28
 quote$ -- 0
-skip$ -- 37
+skip$ -- 59
 stack$ -- 0
-substring$ -- 53
-swap$ -- 5
+substring$ -- 98
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
-warning$ -- 3
-while$ -- 3
+type$ -- 45
+warning$ -- 2
+while$ -- 10
 width$ -- 0
-write$ -- 56
-(There were 3 warnings)
+write$ -- 78
+(There were 2 warnings)
