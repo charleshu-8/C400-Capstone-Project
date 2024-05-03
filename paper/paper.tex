@@ -111,7 +111,28 @@ Retained features from the raw data set are as follows:
   \item \textbf{Bits/s A $\rightarrow$ B, Bits/s B $\rightarrow$ A}: These features track the bitrate of the TCP stream. These features may not necessarily help the model as bitrate is subject to a number of factors that cannot be consistently attributed to a website alone, but the feature itself is not inherently detrimental so it has been left in the data set.
 \end{itemize}
 
-\subsection{Data Specifications}
+\subsection{Data Set}
+
+Artificial user activity was performed and monitored across 5 websites: google.com, github.com, reuters.com, wikipedia.com, and youtube.com.
+Table ~\ref{tab:dataSize} describes the size of each class in the final data set.
+
+\begin{table}
+  \caption{TCP stream count per website in the final cumulative data set}
+  \label{tab:dataSize}
+  \begin{tabular}{cc}
+    \toprule
+    Website & TCP Stream Count \\
+    \midrule
+    google & 20 \\
+    github & 20 \\
+    reuters & 20 \\
+    wikipedia & 20 \\
+    youtube & 20 \\
+    \midrule
+    Total & 100 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \subsubsection{Data Analysis}
 
