@@ -60,6 +60,14 @@ In order to ensure that our developed models are robust and effective at their c
 The primary objective during the design of the data preparation phase was to ensure that the generated data set allows us to construct models that are effectively generalizable and not too overfit.
 A key principle that allows us to achieve this is confirming that the gathered sample is as representative as possible of the general population; however, this is difficult to verify empiricaly given the complex nature of the overall population.
 As a result, a preemptive approach was taken which resulted in the design of a two-stage data preparation phase comprised of a precautious data collection stage and a mitigative data preprocessing stage.
+The data preparation process is summarized in Fig. ~\ref{fig:dataprep}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{img/data_process.png}
+  \caption{A diagram showing the data preparation process. It is split into 2 parts: A data collection stage and a data preprocessing stage.}
+  \label{fig:dataprep}
+\end{figure}
 
 \subsubsection{Data Collection}
 Data collection is performed through the monitoring of artificial website activity aimed at emulating real user interactions common to the sampled websites.
@@ -160,7 +168,7 @@ The developed models do not take these analysis results into account.
   As a result, t-SNE can sometimes help provide a low dimensional view of high dimensional relationships and groupings among points; however, distortions are likely to occur due to the inability of low dimensions to fully express the complexities of higher dimensional relationships (in a manner similar to Mercator projection maps of Earth distorting the true size of various landmasses).
   Fig. ~\ref{fig:tsne} shows a t-SNE projection performed on the final data set.
 
-  \begin{figure}[t]
+  \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{img/tsne.png}
     \caption{t-SNE performed on the final data set.}
@@ -171,7 +179,7 @@ The developed models do not take these analysis results into account.
   L1 regularization is commonly used to derive how important certain features are to the development of the final best fit model for prediction.
   The regularization is highly dependent on the specificities of the ingested data set; thus, features denoted as important should not be blindly trusted as error or noise may distort the true importance of features in the overall population.
   
-  \begin{figure*}[t]
+  \begin{figure*}[h]
     \centering
     \includegraphics[width=\linewidth]{img/l1.png}
     \caption{L1 regularization performed on the final data set. The following describes the evolution of feature importance as the regularization penalty increases.}
@@ -187,6 +195,14 @@ Ensemble models are aggregate designs which use simple models as basic component
 They learn by varying either how its constituent component models learn and or how the results of the component models are aggregated.
 A key principle to how ensemble models work is ensemble theory, which posits that a diversity of learners will result in a stronger overall learning model.
 This is a result of having each constituent learner cover for its own inherent bias (i.e, weaknesses in learning certain aspects of the data set) by leveraging the strength of other constituent learners to cover for it (i.e., leverage learners which have already learned that part of the data set).
+The relationship between a simple model and an ensemble model are summarized in Fig. ~\ref{fig:models}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{img/models.png}
+  \caption{A diagram illustrating the relationship between a simple model and an ensemble model. Note that the described models are for demonstration and are not representative of the entire superset of simple and ensemble models.}
+  \label{fig:models}
+\end{figure}
 
 Complex machine learning models (e.g., neural networks) will be avoided in this project due to concerns over complexity modelling capabilities.
 In particular, strong complex machine learning models are more expressive in function modelling and thus are able to better capture the target function of a given data set (i.e., they are much better at learning how to replicate the data set).
@@ -203,18 +219,53 @@ Cross-validation and hyperparameter tuning will be used when available to optimi
 6 simple model designs and 5 ensemble model designs will be employed.
 Ensemble models will be comprised of simple models that are either the best performing or most applicable.
 The developed models will utilize the model implementations provided by the scikit-learn package \cite{scikit-learn}.
-The details of these model designs are summarized in the following subsections.
+The details of these model designs \cite{sklearn_api, scikit_ref} are summarized in the following subsections.
 
 \subsubsection{Simple Models}
 
 \begin{itemize}
-  \item \textbf{}
+  \item \textbf{Decision tree classifier (DTC)}: A decision tree is an abstraction similar to a tree data structure where a model follows branching decisions driven by data which cumulatively form a tree-like structure.
+  Nodes on the tree are composed of decisions which split the feature(s) and remove data from the current data set on hand based on the decision criteria.
+  This typically continues until the data set on hand is only composed of a single feature (which is considered a pure node) which then becomes the leaf node of a branch.
+  Classifications are based on the developed paths in the tree, where each path from the root to a leaf node corresponds to the target class which developed the path to begin with.
+  
+  \item \textbf{k-nearest neighbors (KNN)}: KNN operates by observing clustering and grouping within a data set. Classification occurs by attempting to find the $k$ most similar points for a given point, and classifying such point based off of the classes of those $k$ most similar points.
+  The particular implementation of this design uses Euclidean distance to find the most similar points.
+  
+  \item \textbf{Logistic regression}: Logistic regression works by trying to find the best fit for a logistic function in the training data.
+  Predictions for data are then generated using this best fit function.
+  Note that though the name implies the use of regression, the implementation in scikit-learn is designed as a classifier.
+  
+  \item \textbf{Naive Bayes classifier}: Naive Bayes leverages Bayes' theorem to perform Bayesian probabilistic predictions of a target output given the surmised distribution of the data set.
+  
+  \item \textbf{Stochastic gradient descent (SGD)}: This is a specialized implementation in scikit-learn which uses stochastic gradient descent to optimize the loss function for a classifier given some input training data. 
+  
+  \item \textbf{Support vector classifier (SVC)}: A variation of a support vector machine designed for classification tasks. It operates by attempting to optimize the separation of different classes in the feature space using hyperplanes.
 \end{itemize}
 
 \subsubsection{Ensemble Models}
 
 \begin{itemize}
-  \item \textbf{}
+  \item \textbf{AdaBoost}: AdaBoost takes a given weak learner and iteratively trains it using the same data set.
+  It encorporates a system of internal weights where more emphasis is placed on observations which have been misclassified by the produced model.
+  This results in each iteration improving at classifying observations that the preceding models were weak at.
+  These new iterations are then fitted onto the original learner to produce a new strong learner.
+  The AdaBoost implementation in this project is built using DTCs, logistic regression, and SGD classifiers.
+
+  \item \textbf{Bagging}: Bagging takes a learner and trains several instances of the learner using random subsets drawn from the training data with replacement.
+  The individual predictions made by these learners are then aggregated in the final ensemble model.
+  The bagging implementation in this project is built using DTCs, KNNs, and logistic regression.
+
+  \item \textbf{Random forest classifier (RFC)}: RFCs are composed of multiple decision trees built using a subset of the training data drawn with replacement.
+  The aggregation in the scikit-learn implementation operates by combining the average probabilistic prediction instead of allowing each tree to vote for a final class.
+  
+  \item \textbf{Stacking}: Stacking takes multiple learners and stacks them on top of a final learner, where the output of each stacked learner is used as an input for the final learner to compute the final class prediction.
+  The stacking implementation in this project is built using a DTC and a KNN for the stacked learners and logistic regression for the final learner.
+
+  \item \textbf{Voting}: Voting takes several learners and trains them independently.
+  It then takes the outputs of each model and counts them as votes to determine the final classification.
+  The voting implementation in this project is built using a DTC, a KNN, and a logistic regression function.
+  Soft (i.e., probabilistic classification) and hard (i.e., final output-based classification) voting techniques are both used.
 \end{itemize}
 
 \section{Evaluation}

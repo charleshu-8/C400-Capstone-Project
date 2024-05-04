@@ -13,47 +13,50 @@ Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty publisher in sklearn_api
+Warning--empty address in sklearn_api
 Warning--empty organization in wireshark
 Warning--empty address in introInfo
-You've used 3 entries,
+Warning--empty organization in scikit_ref
+You've used 5 entries,
             5981 wiz_defined-function locations,
-            1489 strings with 18443 characters,
-and the built_in function-call counts, 3500 in all, are:
-= -- 399
-> -- 183
+            1499 strings with 19015 characters,
+and the built_in function-call counts, 5977 in all, are:
+= -- 640
+> -- 327
 < -- 0
-+ -- 63
-- -- 64
-* -- 297
-:= -- 405
-add.period$ -- 15
-call.type$ -- 3
-change.case$ -- 32
-chr.to.int$ -- 3
-cite$ -- 5
-duplicate$ -- 247
-empty$ -- 174
-format.name$ -- 72
-if$ -- 773
++ -- 113
+- -- 116
+* -- 514
+:= -- 695
+add.period$ -- 24
+call.type$ -- 5
+change.case$ -- 56
+chr.to.int$ -- 5
+cite$ -- 10
+duplicate$ -- 437
+empty$ -- 306
+format.name$ -- 128
+if$ -- 1310
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 67
-num.names$ -- 21
-pop$ -- 102
+missing$ -- 11
+newline$ -- 85
+num.names$ -- 35
+pop$ -- 190
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 96
 quote$ -- 0
-skip$ -- 97
+skip$ -- 177
 stack$ -- 0
-substring$ -- 210
-swap$ -- 26
+substring$ -- 358
+swap$ -- 45
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 61
-warning$ -- 2
-while$ -- 16
+type$ -- 121
+warning$ -- 5
+while$ -- 29
 width$ -- 0
-write$ -- 97
-(There were 2 warnings)
+write$ -- 135
+(There were 5 warnings)
