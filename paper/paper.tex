@@ -126,7 +126,7 @@ These websites were specifically chosen due to their distinct functionalities (e
 Table ~\ref{tab:dataSize} describes the size of each class in the final data set.
 TCP stream counts per website were kept roughly the same in order to prevent data set imbalance which can lead to models over prioritizing training on the larger classes.
 
-\begin{table}
+\begin{table}[h]
   \caption{TCP stream count per website in the final cumulative data set}
   \label{tab:dataSize}
   \begin{tabular}{cc}
@@ -270,22 +270,103 @@ The details of these model designs \cite{sklearn_api, scikit_ref} are summarized
 
 \section{Evaluation}
 
+The following section details the performance of the developed models on the final data set and their evaluation.
+
 \subsection{Evaluation Metric}
+
+The training and testing performance of the models were measured using accuracy.
+Accuracy was used to provide a familiar and easily understandable metric for performance comparison.
+Accuracy is specifically calculated as follows:
+
+\begin{equation}
+  \text{Accuracy} = \frac{\text{True Negative} + \text{True Positive}}{\text{Total Observations}}
+\end{equation}
 
 \subsection{Results}
 
+The performance of the developed models was tested by having each model attempt to correctly classify the true website for a reserved testing set of TCP streams.
+The following subsections describe the results of such testing.
+
 \subsubsection{Baseline}
+
+The performance of the logistic regression model is described in Table ~\ref{tab:log}.
+Other models will be compared to this baseline to determine if they are effective at the web traffic classification task.
+
+\begin{table}[h]
+  \caption{Performance baseline for the models.}
+  \label{tab:log}
+  \begin{tabular}{ccc}
+    \toprule
+    Model & Training Accuracy & Testing Accuracy \\
+    \midrule
+    Log. reg. & 0.49010 & 0.55882 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \subsubsection{Simple Model Results}
 
+The performance of the developed simple models on the web traffic classification task are described in Table ~\ref{tab:simple}.
+DTC and KNN pass the baseline with over 75\% and 65\% accuracy respectively, indicating that these model designs are decently capable of predicting the correct website given some unidentified TCP stream.
+3 models fail to pass the baseline: SVC, SGD, and Naive Bayes.
+
+\begin{table}[h]
+  \caption{Simple model performance.}
+  \label{tab:simple}
+  \begin{tabular}{ccc}
+    \toprule
+    Model & Training Accuracy & Testing Accuracy \\
+    \midrule
+    DTC & 1.0 & 0.75490 \\
+    KNN & 1.0 & 0.65686 \\
+    Log. reg. & 0.49010 & 0.55882 \\
+    SVC & 0.52475 & 0.50980 \\
+    SGD & 0.42822 & 0.5 \\
+    Naive Bayes & 0.39851 & 0.40196 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \subsubsection{Ensemble Model Results}
 
-\subsubsection{Model Results Overall}
+The performance of the developed ensemble models on the web traffic classification task are described in Table ~\ref{tab:ensemble}.
+Of the tested models, AdaBoost with a logistic regression function, AdaBoost with a SGD classifier, and bagging with a logistic regression function failed to pass the baseline minimum performance accuracy.
+The rest of the developed models all passed the baseline minimum with bagging with a DTC, bagging with a KNN, and the RFC model performing the best across all ensemble models.
+Bagging with a DTC in particular shows strong capacity to learn the data set complexity given its ability to correctly classify the testing set with over 83\% accuracy. 
+
+\begin{table}[h]
+  \caption{Ensemble model performance.}
+  \label{tab:ensemble}
+  \begin{tabular}{ccc}
+    \toprule
+    Model & Training Accuracy & Testing Accuracy \\
+    \midrule
+    Bag - DTC & 0.93069 & 0.83333 \\
+    Bag - KNN & 0.88366 & 0.78431 \\
+    RFC & 0.97525 & 0.75490 \\
+    Voting - Soft & 0.94554 & 0.75490 \\
+    Ada - DTC & 0.98762 & 0.74510 \\
+    Stacking & 0.95050 & 0.74510 \\
+    Voting - Hard & 0.94307 & 0.72549 \\
+    Ada - Log. reg. & 0.50248 & 0.50980 \\
+    Ada - SGD & 0.54455 & 0.49020 \\
+    Bag - Log. reg. & 0.48515 & 0.49020 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Overall Model Results}
+
+Across both the simple models and ensemble models, bagging with a DTC performed the best with a testing accuracy of over 83\%.
+All other developed models had accuracy scores below 80\%, with the closest model being bagging with a KNN with 78\% accuracy.
+This suggests that bagging with a DTC is the most optimal model among those developed to use for confidently classifying web traffic based off of TCP streams.
 
 
 \section{Discussion \& Future Work}
 
 \subsection{Result Interpretations}
+
+
 
 \subsection{Future Work}
 

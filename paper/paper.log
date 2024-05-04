@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.22)  3 MAY 2024 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.22)  4 MAY 2024 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -929,7 +929,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4.4 <./img/tsne.png>]
 Underfull \vbox (badness 4981) has occurred while \output is active []
 
- [5.5 <./img/l1.png> <./img/models.png>] (paper.bbl
+ [5.5 <./img/l1.png> <./img/models.png>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 282.
+ [6.6] (paper.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 52.
 LaTeX Info: Redefining \tempurl on input line 102.
@@ -938,33 +941,32 @@ LaTeX Info: Redefining \tempurl on input line 102.
 Class acmart Warning: Some images may lack descriptions.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Overfull \vbox (1.688pt too high) has occurred while \output is active []
 
-(C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
+ (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [6.6{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (paper.aux)
+) [7.7{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (paper.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 119175AE3FDF80D6D15824CCEE43668F;2086.
+(rerunfilecheck)             Checksum: C4517438B79D4D76A0EBF315A3141F88;2086.
  ) 
 Here is how much of TeX's memory you used:
- 21044 strings out of 475503
- 340965 string characters out of 5761834
+ 21073 strings out of 475503
+ 341549 string characters out of 5761834
  1941248 words of memory out of 5000000
- 41419 multiletter control sequences out of 15000+600000
- 694176 words of font info for 324 fonts, out of 8000000 for 9000
+ 41426 multiletter control sequences out of 15000+600000
+ 701323 words of font info for 336 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1068b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on paper.pdf (6 pages, 691071 bytes).
+ 90i,12n,131p,1068b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
+Output written on paper.pdf (7 pages, 708359 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 65703 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 67751 words of extra memory for PDF output out of 74296 (max. 10000000)
 

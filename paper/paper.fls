@@ -437,6 +437,11 @@ INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\nxlmi.v
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\LibertineMathMI.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\nxlmia.vf
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\LibertineMathRM.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaX.tfm
 INPUT .\paper.bbl
 INPUT .\paper.bbl
 INPUT paper.bbl
@@ -469,5 +474,7 @@ INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txmiaX.pfb
+INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txsys.pfb
 INPUT C:\Users\okisn\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txsys.pfb
