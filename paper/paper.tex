@@ -35,20 +35,20 @@
 
 \begin{abstract}
   In this project, we address the task of identifying the originating website given some anonymized web traffic for the purposes of gaining new insights for improving network security and optimization.
-  We construct a data set of TCP streams sourced from 5 different websites: github.com, google.com, reuters.com, wikipedia.com, and youtube.com.
+  We construct a data set of TCP streams sourced from 5 different websites: github.com, google.com, reuters.com, wikipedia.org, and youtube.com.
   With this, we develop and test 15 different machine learning models based on simple and ensemble model designs.
-  We determine that a bagging ensemble model built using a decision tree provides the best performance with an accuracy score of 0.83 on the testing set, and demonstrate the capabilities of ensemble models and note the implication that web traffic data may be distinctive and generally non-overlapping.
+  We determine that a bagging ensemble model built using a decision tree provides the best performance with an accuracy score of 0.83 on the testing set, demonstrate the capabilities of ensemble models, and note the implication that web traffic data may be distinctive and generally non-overlapping.
   Challenges to this project are then analyzed and addressed with potential future avenues for improvement.
 \end{abstract}
 
-\keywords{Network trafifc, Network traffic classification, Machine learning, Ensemble models}
+\keywords{Network traffic, Network traffic classification, Machine learning, Ensemble models}
 
 \maketitle
 
 \section{Introduction}
 
-The recent decade has witnessed a boom in use and dependency on Internet-related devices as the Internet becomes more integrated with how we live and work.
-With Internet users projected to reach almost 8 billion users by 2030 \cite{forbes}, there is now a growing need for improving techniques for identifying web traffic for purposes of network security and optimization \cite{traffic} in the face of exponentially increasing web traffic both benign and malicious.
+The recent decade has witnessed a boom in use of and dependency on Internet-related devices as the Internet becomes more integrated with how we live and work.
+With Internet users projected to reach almost 8 billion by 2030 \cite{forbes}, there is now a growing need for improving techniques for identifying web traffic with the purpose of network security and optimization \cite{traffic} in the face of exponentially increasing web traffic both benign and malicious.
 This project aims to develop a model for identifying the originating website for anonymized web traffic by observing and exploiting different patterns exhibited by different websites.
 
 This is achieved through the development of multiple simple and ensemble models, which were trained and tested on data derived from artificial user activity across 5 different websites.
@@ -66,8 +66,8 @@ The following section details the design and rationale behind the methodology us
 In order to ensure that our developed models are robust and effective at their classification task, we employ a measured and systemized approach towards data collection and preprocessing to ensure that possibility of gathering ideosyncratic or erroneous data is minimized as much as possible.
 
 The primary objective during the design of the data preparation phase was to ensure that the generated data set allows us to construct models that are effectively generalizable and not too overfit.
-A key principle that allows us to achieve this is confirming that the gathered sample is as representative as possible of the general population; however, this is difficult to verify empiricaly given the complex nature of the overall population.
-As a result, a preemptive approach was taken which resulted in the design of a two-stage data preparation phase comprised of a precautious data collection stage and a mitigative data preprocessing stage.
+A key principle that allows us to achieve this is confirming that the gathered sample is as representative as possible of the general population; however, this is difficult to verify empirically given the complex nature of the overall population.
+As a result, a preemptive approach was taken, which resulted in the design of a two-stage data preparation phase comprised of a precautious data collection stage and a mitigative data preprocessing stage.
 The data preparation process is summarized in Fig. ~\ref{fig:dataprep}.
 
 \begin{figure}[h]
@@ -89,14 +89,14 @@ Once activity on a website has been concluded, Wireshark will be used to display
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=.9\pdfpagewidth]{img/wireshark.png}
+  \includegraphics[width=.8\pdfpagewidth]{img/wireshark.png}
   \caption{A Wireshark window displaying tracked TCP streams and each stream's corresponding attributes. Note that IP addresses have been censored.}
   \label{fig:wireshark}
 \end{figure*}
 
 \subsubsection{Data Preprocessing}
 Data preprocessing involves pruning the resulting data set from the data collection stage to remove features that are either explicitly detrimental or extraneous.
-The removal of these features help improve the generalizability of our developed models by decreasing the overall model complexity and thus the variance inherent to it \cite{introInfo}; thus, if any idiosyncrasies or noise make it through our first stage of data collection, we can still reduce their influence on the overall model performance by lowering the capacity of the model to learn bad data.
+The removal of these features help improve the generalizability of our developed models by decreasing the overall model complexity and thus the variance inherent to it \cite{introInfo}; therefore, if any idiosyncrasies or noise make it through our first stage of data collection, we can still reduce their influence on the overall model performance by lowering the capacity of the model to learn bad data.
 To ensure that we do not develop models that have too low complexity due to a lack of learned features (and therefore trending towards too much bias in the bias-variance tradeoff), only features that are explicitly detrimental or extraneous will be removed.
 Removed features are as follows:
 
@@ -105,7 +105,7 @@ Removed features are as follows:
   
   \item \textbf{Stream ID}: This feature tracks the unique internal tracking ID given by Wireshark to any given TCP stream for later reference. This is Wireshark specific and not pertinent to the TCP stream itself.
   
-  \item \textbf{Total Packets, Percent Filtered}: These features refer to the fitler display feature in Wireshark which filters every available packet to search for some filter specification (in this case, the target website). These are Wireshark specific and not pertinent to the TCP stream itself.
+  \item \textbf{Total Packets, Percent Filtered}: These features refer to the filter display feature in Wireshark, which filters every available packet to search for some filter specification (in this case, the target website). These are Wireshark specific and not pertinent to the TCP stream itself.
   
   \item \textbf{Rel Start}: This feature indicates when the TCP stream began relative to the start of the Wireshark network capture session. This is Wireshark specific and not pertinent to the TCP stream itself.
 \end{itemize}
@@ -129,10 +129,10 @@ Retained features from the raw data set are as follows:
 
 \subsection{Data Set}
 
-Artificial user activity was performed and monitored across 5 websites: github.com, google.com, reuters.com, wikipedia.com, and youtube.com.
+Artificial user activity was performed and monitored across 5 websites: github.com, google.com, reuters.com, wikipedia.org, and youtube.com.
 These websites were specifically chosen due to their distinct functionalities (e.g., youtube.com provides video streaming services, whereas reuters.com provides news content), which may lead to distinctive web traffic behaviors that can help in providing a direction for the trained models in the classification task.
 Table ~\ref{tab:dataSize} describes the size of each class in the final data set.
-TCP stream counts per website were kept roughly the same in order to prevent data set imbalance which can lead to models over prioritizing training on the larger classes.
+TCP stream counts per website were kept roughly the same in order to prevent data set imbalance which can lead to models over-prioritizing training on the larger classes.
 
 \begin{table}[h]
   \caption{TCP stream count per website in the final cumulative data set}
@@ -157,7 +157,7 @@ TCP stream counts per website were kept roughly the same in order to prevent dat
 Preliminary data analysis was performed on the final data set to observe general trends and behavior.
 Note that due to the small sample size of the data set, potential idiosyncrasies or noise may be exacerbated in the analysis methods.
 As such, the results of these methods are only to be taken as basic guidance for handling and interpreting the data and should always be trumped by domain knowledge.
-Interpretations for each analysis method will not be provided as to ensure that these methods do not influence the interpretation of the final models; however, a basic description of how they operate will be provided.
+A description of how they operate will be provided.
 The developed models do not take these analysis results into account.
 
 \begin{itemize}
@@ -190,7 +190,7 @@ The developed models do not take these analysis results into account.
   \begin{figure*}[h]
     \centering
     \includegraphics[width=\linewidth]{img/l1.png}
-    \caption{L1 regularization performed on the final data set. The following describes the evolution of feature importance as the regularization penalty increases.}
+    \caption{L1 regularization performed on the final data set. This graph describes the evolution of feature importance as the regularization penalty increases.}
     \label{fig:l1}
   \end{figure*}
 \end{itemize}
@@ -234,10 +234,10 @@ The details of these model designs \cite{sklearn_api, scikit_ref} are summarized
 \begin{itemize}
   \item \textbf{Decision tree classifier (DTC)}: A decision tree is an abstraction similar to a tree data structure where a model follows branching decisions driven by data which cumulatively form a tree-like structure.
   Nodes on the tree are composed of decisions which split the feature(s) and remove data from the current data set on hand based on the decision criteria.
-  This typically continues until the data set on hand is only composed of a single feature (which is considered a pure node) which then becomes the leaf node of a branch.
+  This typically continues until the data set on hand is only composed of a single feature (known as a pure node) which then becomes the leaf node of a branch.
   Classifications are based on the developed paths in the tree, where each path from the root to a leaf node corresponds to the target class which developed the path to begin with.
   
-  \item \textbf{k-nearest neighbors (KNN)}: KNN operates by observing clustering and grouping within a data set. Classification occurs by attempting to find the $k$ most similar points for a given point, and classifying such point based off of the classes of those $k$ most similar points.
+  \item \textbf{k-nearest neighbors (KNN)}: KNN operates by observing clustering and grouping within a data set. Classification occurs by attempting to find the $k$ most similar points for a given point, and classifying such point based off the classes of those $k$ most similar points.
   The particular implementation of this design uses Euclidean distance to find the most similar points.
   
   \item \textbf{Logistic regression}: Logistic regression works by trying to find the best fit for a logistic function in the training data.
@@ -283,8 +283,8 @@ The following section details the performance of the developed models on the fin
 \subsection{Evaluation Metric}
 
 The training and testing performance of the models were measured using accuracy.
-Accuracy was used to provide a familiar and easily understandable metric for performance comparison.
-Accuracy is specifically calculated as follows:
+Accuracy was used because it is a simple and easily understandable metric for performance comparison.
+Accuracy is calculated as follows:
 
 \begin{equation}
   \text{Accuracy} = \frac{\text{True Negative} + \text{True Positive}}{\text{Total Observations}}
@@ -388,7 +388,7 @@ This may suggest that web traffic either clusters or is distinct and non-overlap
 This reasoning is derived from the fact that both KNN and DTC operation on regions.
 KNN operates by specifically noting spatial similarity of points and is advantageous when points of the same class tend to group together.
 DTC draws decision boundaries on the data set that effectively partitions the data with each decision, effectively creating regions where it supposes classes are.
-Both suggestions imply that different websites do have certain web traffic patterns which result in their TCP streams displaying distinctive traits not common to other websites; however, the former posits that this distinction is obvious whereas the latter posits that this distinction is weak.
+Both suggestions imply that different websites do have certain web traffic patterns which result in their TCP streams displaying distinctive traits not common to other websites; however, the former posits that this distinction is obvious whereas the latter posits that this distinction is less obvious.
 
 These interpretations, if true, then contribute greatly to the problem of web traffic classification by giving us a better idea of the general patterns exhibited by the overall population of TCP stream communications.
 Leveraging this would greatly help in fields such as network management and security to better improve existing techniques used for network traffic identification and management, such as optimizing traffic for in-demand web services and preventing malicious traffic intrusion \cite{traffic}.
@@ -426,7 +426,7 @@ Using a data set of TCP streams drawn from 5 different websites, we designed and
 We discovered that a bagging ensemble model built using a decision tree performed the best out of all developed models.
 
 This project helps demonstrate a potential avenue for improving existing techniques for network identification and management by proving the capabilities of ensemble machine learning models on such a task.
-We also gain the insight that web traffic, at the very least, displays distinctive generally non-overlapping behavior for websites with different functionalities.
+We also gain the insight that web traffic, at the very least, displays distinctive and generally non-overlapping behavior for websites with different functionalities.
 
 Thus, this project serves as potential springboard for further research into using ensemble models for network traffic classification tasks which can help improve or supplement current existing techniques for web traffic identification and management.
 
