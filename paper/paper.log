@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.22)  4 MAY 2024 01:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.22)  4 MAY 2024 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -775,179 +775,179 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 47.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 47.
+(Font)              scaled to size 20.74pt on input line 46.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 46.
  (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 47.
+(Font)              scaled to size 20.74pt on input line 46.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 47.
+(Font)              scaled to size 20.74pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 47.
+(Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 47.
+(Font)              scaled to size 10.95pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 47.
+(Font)              scaled to size 10.95pt on input line 46.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 47.
+(Font)              scaled to size 6.1pt on input line 46.
  (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 47.
+(Font)              scaled to size 10.0pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 47.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 47.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 47.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 47.
-<img/data_process.png, id=67, 788.19469pt x 618.81187pt>
+(Font)              scaled to size 12.0pt on input line 46.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<img/data_process.png, id=69, 788.19469pt x 618.81187pt>
 File: img/data_process.png Graphic file (type png)
 <use img/data_process.png>
-Package pdftex.def Info: img/data_process.png  used on input line 67.
+Package pdftex.def Info: img/data_process.png  used on input line 75.
 (pdftex.def)             Requested size: 241.14749pt x 189.31804pt.
 
 
-Class acmart Warning: A possible image without description on input line 70.
+Class acmart Warning: A possible image without description on input line 78.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 73.
+(Font)              scaled to size 10.0pt on input line 81.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 73.
-<img/wireshark.png, id=71, 1381.41093pt x 469.00218pt>
+(Font)              scaled to size 10.0pt on input line 81.
+[1.1{C:/Users/okisn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
+
+{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}]
+<img/wireshark.png, id=89, 1381.41093pt x 469.00218pt>
 File: img/wireshark.png Graphic file (type png)
 <use img/wireshark.png>
-Package pdftex.def Info: img/wireshark.png  used on input line 84.
+Package pdftex.def Info: img/wireshark.png  used on input line 92.
 (pdftex.def)             Requested size: 552.86174pt x 187.7049pt.
 
-Overfull \hbox (46.56674pt too wide) in paragraph at lines 84--85
+Overfull \hbox (46.56674pt too wide) in paragraph at lines 92--93
  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 87.
+Class acmart Warning: A possible image without description on input line 95.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1.1{C:/Users/okisn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 104.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 104.
 
-{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <./img/data_process.png>]
-Overfull \hbox (1.71878pt too wide) in paragraph at lines 102--103
+Overfull \hbox (1.71878pt too wide) in paragraph at lines 110--111
 []\T1/LinuxLibertineT-TLF/b/n/10 (-20) Rel Start\T1/LinuxLibertineT-TLF/m/n/10 (-20) : This fea-ture in-di-cates when the TCP stream
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (1.3758pt too wide) in paragraph at lines 117--118
+Overfull \hbox (1.3758pt too wide) in paragraph at lines 125--126
 []\T1/LinuxLibertineT-TLF/b/n/10 (-20) Duration\T1/LinuxLibertineT-TLF/m/n/10 (-20) : The en-tire time du-ra-tion of the TCP stream
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 118.
- [2.2 <./img/wireshark.png>]
-Overfull \hbox (5.16916pt too wide) in paragraph at lines 124--128
+(Font)              scaled to size 8.0pt on input line 128.
+[2.2 <./img/data_process.png>]
+Overfull \hbox (5.16916pt too wide) in paragraph at lines 132--136
 \T1/LinuxLibertineT-TLF/m/n/10 (-20) web-sites: github.com, google.com, reuters.com, wikipedia.com,
  []
 
 
-Overfull \hbox (5.86565pt too wide) in paragraph at lines 149--154
+Overfull \hbox (5.86565pt too wide) in paragraph at lines 157--162
  \T1/LinuxBiolinumT-TLF/m/it/10 (-20) 2.2.1 Data Anal-y-sis.[] \T1/LinuxLibertineT-TLF/m/n/10 (-20) Pre-lim-i-nary data anal-y-sis was per-formed
  []
 
-<img/pca.png, id=100, 386.6445pt x 310.0383pt>
+<img/pca.png, id=103, 386.6445pt x 310.0383pt>
 File: img/pca.png Graphic file (type png)
 <use img/pca.png>
-Package pdftex.def Info: img/pca.png  used on input line 162.
+Package pdftex.def Info: img/pca.png  used on input line 170.
 (pdftex.def)             Requested size: 241.14749pt x 193.36661pt.
 
-Class acmart Warning: A possible image without description on input line 165.
+Class acmart Warning: A possible image without description on input line 173.
 
-<img/tsne.png, id=102, 386.6445pt x 310.0383pt>
+<img/tsne.png, id=105, 386.6445pt x 310.0383pt>
 File: img/tsne.png Graphic file (type png)
 <use img/tsne.png>
-Package pdftex.def Info: img/tsne.png  used on input line 173.
+Package pdftex.def Info: img/tsne.png  used on input line 181.
 (pdftex.def)             Requested size: 241.14749pt x 193.36661pt.
 
-Class acmart Warning: A possible image without description on input line 176.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/l1.png, id=104, 846.2817pt x 397.485pt>
-File: img/l1.png Graphic file (type png)
-<use img/l1.png>
-Package pdftex.def Info: img/l1.png  used on input line 184.
-(pdftex.def)             Requested size: 506.295pt x 237.8014pt.
-
-Class acmart Warning: A possible image without description on input line 187.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 6173) has occurred while \output is active []
-
- [3.3 <./img/pca.png>]
-<img/models.png, id=116, 927.465pt x 552.56438pt>
-File: img/models.png Graphic file (type png)
-<use img/models.png>
-Package pdftex.def Info: img/models.png  used on input line 202.
-(pdftex.def)             Requested size: 241.14749pt x 143.67177pt.
-
-
-Class acmart Warning: A possible image without description on input line 205.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Class acmart Warning: A possible image without description on input line 184.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4.4 <./img/tsne.png>]
-Underfull \vbox (badness 4981) has occurred while \output is active []
+ [3.3 <./img/wireshark.png>]
+<img/l1.png, id=115, 846.2817pt x 397.485pt>
+File: img/l1.png Graphic file (type png)
+<use img/l1.png>
+Package pdftex.def Info: img/l1.png  used on input line 192.
+(pdftex.def)             Requested size: 506.295pt x 237.8014pt.
+
+
+Class acmart Warning: A possible image without description on input line 195.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/models.png, id=117, 927.465pt x 552.56438pt>
+File: img/models.png Graphic file (type png)
+<use img/models.png>
+Package pdftex.def Info: img/models.png  used on input line 210.
+(pdftex.def)             Requested size: 241.14749pt x 143.67177pt.
+
+Class acmart Warning: A possible image without description on input line 213.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+ [4.4 <./img/pca.png> <./img/tsne.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5.5 <./img/l1.png> <./img/models.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 282.
- [6.6] (paper.bbl
+(Font)              scaled to size 7.3pt on input line 290.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 290.
+ [6.6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7.7] (paper.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 52.
 LaTeX Info: Redefining \tempurl on input line 102.
+LaTeX Info: Redefining \tempurl on input line 114.
 )
 
 Class acmart Warning: Some images may lack descriptions.
 
 
-Overfull \vbox (1.688pt too high) has occurred while \output is active []
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
- (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
+(C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (C:\Users\okisn\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [7.7{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (paper.aux)
+) [8.8{C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (paper.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
@@ -956,17 +956,17 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: C4517438B79D4D76A0EBF315A3141F88;2086.
  ) 
 Here is how much of TeX's memory you used:
- 21073 strings out of 475503
- 341549 string characters out of 5761834
- 1941248 words of memory out of 5000000
- 41426 multiletter control sequences out of 15000+600000
- 701323 words of font info for 336 fonts, out of 8000000 for 9000
+ 21093 strings out of 475503
+ 341930 string characters out of 5761834
+ 1944248 words of memory out of 5000000
+ 41432 multiletter control sequences out of 15000+600000
+ 702314 words of font info for 344 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1068b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1068b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/okisn/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on paper.pdf (7 pages, 708359 bytes).
+Output written on paper.pdf (8 pages, 711915 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 67751 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 65703 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -17,46 +17,50 @@ Warning--empty publisher in sklearn_api
 Warning--empty address in sklearn_api
 Warning--empty organization in wireshark
 Warning--empty address in introInfo
+Warning--empty organization in forbes
 Warning--empty organization in scikit_ref
-You've used 5 entries,
+Warning--empty publisher in traffic
+Warning--empty address in traffic
+Warning--page numbers missing in both pages and numpages fields in traffic
+You've used 7 entries,
             5981 wiz_defined-function locations,
-            1499 strings with 19015 characters,
-and the built_in function-call counts, 5977 in all, are:
-= -- 640
-> -- 327
+            1508 strings with 19417 characters,
+and the built_in function-call counts, 7936 in all, are:
+= -- 823
+> -- 423
 < -- 0
-+ -- 113
-- -- 116
-* -- 514
-:= -- 695
-add.period$ -- 24
-call.type$ -- 5
-change.case$ -- 56
-chr.to.int$ -- 5
-cite$ -- 10
-duplicate$ -- 437
-empty$ -- 306
-format.name$ -- 128
-if$ -- 1310
++ -- 145
+- -- 150
+* -- 673
+:= -- 914
+add.period$ -- 32
+call.type$ -- 7
+change.case$ -- 74
+chr.to.int$ -- 7
+cite$ -- 16
+duplicate$ -- 606
+empty$ -- 425
+format.name$ -- 166
+if$ -- 1738
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 85
-num.names$ -- 35
-pop$ -- 190
+missing$ -- 16
+newline$ -- 103
+num.names$ -- 49
+pop$ -- 273
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 130
 quote$ -- 0
-skip$ -- 177
+skip$ -- 245
 stack$ -- 0
-substring$ -- 358
-swap$ -- 45
+substring$ -- 460
+swap$ -- 56
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 121
-warning$ -- 5
-while$ -- 29
+type$ -- 181
+warning$ -- 9
+while$ -- 39
 width$ -- 0
-write$ -- 135
-(There were 5 warnings)
+write$ -- 172
+(There were 9 warnings)

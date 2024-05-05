@@ -34,12 +34,11 @@
 }
 
 \begin{abstract}
-  A clear and well-documented \LaTeX\ document is presented as an
-  article formatted for publication by ACM in a conference proceedings
-  or journal publication. Based on the ``acmart'' document class, this
-  article presents and explains many of the common variations, as well
-  as many of the formatting elements an author may use in the
-  preparation of the documentation of their work. A cite so this compiles.
+  In this project, we address the task of identifying the originating website given some anonymized web traffic for the purposes of gaining new insights for improving network security and optimization.
+  We construct a data set of TCP streams sourced from 5 different websites: github.com, google.com, reuters.com, wikipedia.com, and youtube.com.
+  With this, we develop and test 15 different machine learning models based on simple and ensemble model designs.
+  We determine that a bagging ensemble model built using a decision tree provides the best performance with an accuracy score of 0.83 on the testing set, and demonstrate the capabilities of ensemble models and note the implication that web traffic data may be distinctive and generally non-overlapping.
+  Challenges to this project are then analyzed and addressed with potential future avenues for improvement.
 \end{abstract}
 
 \keywords{Network trafifc, Network traffic classification, Machine learning, Ensemble models}
@@ -47,6 +46,15 @@
 \maketitle
 
 \section{Introduction}
+
+The recent decade has witnessed a boom in use and dependency on Internet-related devices as the Internet becomes more integrated with how we live and work.
+With Internet users projected to reach almost 8 billion users by 2030 \cite{forbes}, there is now a growing need for improving techniques for identifying web traffic for purposes of network security and optimization \cite{traffic} in the face of exponentially increasing web traffic both benign and malicious.
+This project aims to develop a model for identifying the originating website for anonymized web traffic by observing and exploiting different patterns exhibited by different websites.
+
+This is achieved through the development of multiple simple and ensemble models, which were trained and tested on data derived from artificial user activity across 5 different websites.
+Evaluation of the models through accuracy scores on a testing set revealed that a bagging ensemble model built using a decision tree performed the best out of all developed models with a testing accuracy score of around 0.83.
+
+Through this project, we demonstrate the feasibility of using ensemble machine learning models in improving existing techniques for network identification and management by proving their capabilities in web traffic identification.
 
 
 \section{Proposed Method}
@@ -168,7 +176,7 @@ The developed models do not take these analysis results into account.
   As a result, t-SNE can sometimes help provide a low dimensional view of high dimensional relationships and groupings among points; however, distortions are likely to occur due to the inability of low dimensions to fully express the complexities of higher dimensional relationships (in a manner similar to Mercator projection maps of Earth distorting the true size of various landmasses).
   Fig. ~\ref{fig:tsne} shows a t-SNE projection performed on the final data set.
 
-  \begin{figure}[h]
+  \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{img/tsne.png}
     \caption{t-SNE performed on the final data set.}
@@ -307,7 +315,7 @@ Other models will be compared to this baseline to determine if they are effectiv
 \subsubsection{Simple Model Results}
 
 The performance of the developed simple models on the web traffic classification task are described in Table ~\ref{tab:simple}.
-DTC and KNN pass the baseline with over 75\% and 65\% accuracy respectively, indicating that these model designs are decently capable of predicting the correct website given some unidentified TCP stream.
+DTC and KNN pass the baseline with over 0.75 and 0.65 accuracy respectively, indicating that these model designs are decently capable of predicting the correct website given some unidentified TCP stream.
 3 models fail to pass the baseline: SVC, SGD, and Naive Bayes.
 
 \begin{table}[h]
@@ -319,7 +327,6 @@ DTC and KNN pass the baseline with over 75\% and 65\% accuracy respectively, ind
     \midrule
     DTC & 1.0 & 0.75490 \\
     KNN & 1.0 & 0.65686 \\
-    Log. reg. & 0.49010 & 0.55882 \\
     SVC & 0.52475 & 0.50980 \\
     SGD & 0.42822 & 0.5 \\
     Naive Bayes & 0.39851 & 0.40196 \\
@@ -332,7 +339,7 @@ DTC and KNN pass the baseline with over 75\% and 65\% accuracy respectively, ind
 The performance of the developed ensemble models on the web traffic classification task are described in Table ~\ref{tab:ensemble}.
 Of the tested models, AdaBoost with a logistic regression function, AdaBoost with a SGD classifier, and bagging with a logistic regression function failed to pass the baseline minimum performance accuracy.
 The rest of the developed models all passed the baseline minimum with bagging with a DTC, bagging with a KNN, and the RFC model performing the best across all ensemble models.
-Bagging with a DTC in particular shows strong capacity to learn the data set complexity given its ability to correctly classify the testing set with over 83\% accuracy. 
+Bagging with a DTC in particular shows strong capacity to learn the data set complexity given its ability to correctly classify the testing set with about 0.83 accuracy. 
 
 \begin{table}[h]
   \caption{Ensemble model performance.}
@@ -357,8 +364,8 @@ Bagging with a DTC in particular shows strong capacity to learn the data set com
 
 \subsubsection{Overall Model Results}
 
-Across both the simple models and ensemble models, bagging with a DTC performed the best with a testing accuracy of over 83\%.
-All other developed models had accuracy scores below 80\%, with the closest model being bagging with a KNN with 78\% accuracy.
+Across both the simple models and ensemble models, bagging with a DTC performed the best with a testing accuracy of about 0.83.
+All other developed models had accuracy scores below 0.80, with the closest model being bagging with a KNN with around 0.78 accuracy.
 This suggests that bagging with a DTC is the most optimal model among those developed to use for confidently classifying web traffic based off of TCP streams.
 
 
@@ -366,13 +373,62 @@ This suggests that bagging with a DTC is the most optimal model among those deve
 
 \subsection{Result Interpretations}
 
+Out of 15 machine learning models developed and tested to classify web traffic, the bagging with a DTC model was the most effective and accurate classifier with about 0.83 accuracy on a reserved testing set.
+Further analysis of the top performing models also reveals that 4 of the top 5 performing models were ensemble models and all of the top 5 models encorporated either a DTC or a KNN in their design.
 
+We can first interpret these results to mean that ensemble models do generally perform better than their single model counterparts when tasked with classifying the website given some sample of web traffic.
+This can be attributed to how aggregation of models works in ensemble models.
+With a single model design, if the given learner is unable to learn how to properly model a part of the data set, it is always guaranteed to have poor performance accuracy whenever it encounters that part of the data set again.
+With ensemble models, if one of our constituent learners is weak at learning some part of the data, we can still leverage other constituent learners in the ensemble model to learn that part of the data and cover for it.
+Given that our collected TCP stream data is complex and contain mulitple features, it is expected that a simple model cannot accurately learn the data set whereas an ensemble model can.
+Thus, we can interpret the superior performance of ensemble models on the web traffic classification task as reaffirming ensemble theory.
+
+We can then interpret the dominance of DTC and KNN-based models as a sign that such models generally perform better on classifying web traffic data.
+This may suggest that web traffic either clusters or is distinct and non-overlapping.
+This reasoning is derived from the fact that both KNN and DTC operation on regions.
+KNN operates by specifically noting spatial similarity of points and is advantageous when points of the same class tend to group together.
+DTC draws decision boundaries on the data set that effectively partitions the data with each decision, effectively creating regions where it supposes classes are.
+Both suggestions imply that different websites do have certain web traffic patterns which result in their TCP streams displaying distinctive traits not common to other websites; however, the former posits that this distinction is obvious whereas the latter posits that this distinction is weak.
+
+These interpretations, if true, then contribute greatly to the problem of web traffic classification by giving us a better idea of the general patterns exhibited by the overall population of TCP stream communications.
+Leveraging this would greatly help in fields such as network management and security to better improve existing techniques used for network traffic identification and management, such as optimizing traffic for in-demand web services and preventing malicious traffic intrusion \cite{traffic}.
 
 \subsection{Future Work}
+
+A number of challenges were encountered during this project:
+
+\begin{itemize}
+  \item \textbf{Small sample size}: The extremely limited size of the data set may result in the used sample only reflecting a small portion of the overall population.
+  This would then mean that our developed models have poor generalizability due to the unrepresentative data set they were trained on.
+  
+  \item \textbf{Overfitting concerns}: As a result of the small sample size of the data set and the increased complexity provided by the ensemble models, there is a concern that overfitting may have occurred across the developed models. 
+  
+  \item \textbf{Data set concerns}: It is possible that unintended or unforeseen errors may have occurred during the data collection process.
+  While the data preprocessing stage helps mitigate the effects of this, there will still be some level of influence by the bad data on the final result.
+\end{itemize}
+
+To rectify these challenges, we propose the following future work:
+
+\begin{itemize}
+  \item \textbf{Increased data set size}: Increasing the data set size used will typically also increase the representativeness of our sample on the overall population.
+  Doing so would decrease the likelihood for overfitting and ensure that noise and error in the data will not be as influential on the final model.
+  
+  \item \textbf{Streamlined data collection process}: Streamlining and automating the data collection process will help reduce human error involved in the data collection procedure and allow more time to invest in getting more natural and representative samples of web traffic.
+  
+  \item \textbf{Design revision and expansion}: The interchangeable nature of learners in ensemble models opens room for potential expansion and revisiting of previously demonstrated models using new learners or hyperparameters, which can potentially reveal more about general trends in network traffic and how to capture them.
+\end{itemize}
 
 
 \section{Conclusion}
 
+In this project, we aimed to develop machine learning models with the purpose of identifying which website a given sample of TCP web traffic came from.
+Using a data set of TCP streams drawn from 5 different websites, we designed and trained 15 machine learning models and compared them against a logistic regression baseline.
+We discovered that a bagging ensemble model built using a decision tree performed the best out of all developed models.
+
+This project helps demonstrate a potential avenue for improving existing techniques for network identification and management by proving the capabilities of ensemble machine learning models on such a task.
+We also gain the insight that web traffic, at the very least, displays distinctive generally non-overlapping behavior for websites with different functionalities.
+
+Thus, this project serves as potential springboard for further research into using ensemble models for network traffic classification tasks which can help improve or supplement current existing techniques for web traffic identification and management.
 
 % Note from the CFP that this section must include a statement about
 % ethical issues; papers that do not include such a statement may be

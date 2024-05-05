@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -92,6 +92,18 @@
 \newblock
 
 
+\bibitem[Pelchen(2024)]%
+        {forbes}
+\bibfield{author}{\bibinfo{person}{Lexie Pelchen}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Internet Usage Statistics In 2024}}.
+\newblock
+\urldef\tempurl%
+\url{https://www.forbes.com/home-improvement/internet/internet-statistics/}
+\showURL{%
+\tempurl}
+
+
 \bibitem[scikit-learn Developers(2024)]%
         {scikit_ref}
 \bibfield{author}{\bibinfo{person}{scikit-learn Developers}.}
@@ -102,6 +114,19 @@
 \url{https://scikit-learn.org/stable/modules/classes.html}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2023)]%
+        {traffic}
+\bibfield{author}{\bibinfo{person}{Yan Zhou}, \bibinfo{person}{Huiling Shi},
+  \bibinfo{person}{Yanling Zhao}, \bibinfo{person}{Wei Ding},
+  \bibinfo{person}{Jing Han}, \bibinfo{person}{Hongyang Sun},
+  \bibinfo{person}{Xianheng Zhang}, \bibinfo{person}{Chang Tang}, {and}
+  \bibinfo{person}{Wei Zhang1}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Identification of encrypted and malicious network
+  traffic based on one-dimensional convolutional neural network}. In
+  \bibinfo{booktitle}{\emph{Journal of Cloud Computing}}.
+\newblock
 
 
 \end{thebibliography}
